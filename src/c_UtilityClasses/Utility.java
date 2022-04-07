@@ -9,6 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
+import org.testng.Reporter;
 
 public class Utility
 {
@@ -17,6 +18,7 @@ public class Utility
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		File desti= new File("I:\\Educational File\\TESTING MODULE\\Screenshot\\"+TCID+"ss.png");
 		FileHandler.copy(src, desti);
+		Reporter.log("Screenshot is taken", true);
 	}
 
 

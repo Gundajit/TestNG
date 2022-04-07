@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="listener.Testing">
+      <class name="BrowserStudy.CrossBrowserTest">
         <methods>
-          <include name="TC3"/>
-          <include name="TC4"/>
+          <include name="Tc1"/>
         </methods>
-      </class> <!-- listener.Testing -->
+      </class> <!-- BrowserStudy.CrossBrowserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -23,6 +23,7 @@ public class Base
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
 		driver.manage().window().maximize();
 		Reporter.log("Browser Launch", true);
+		System.out.println("browser launched");
 		
 	}
 	
